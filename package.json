@@ -10,11 +10,16 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^2.2.1",
     "@astrojs/tailwind": "^4.0.0",
     "@astrojs/vercel": "^3.6.0",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
     "@vercel/analytics": "^1.0.1",
-    "astro": "^2.7.2",
+    "astro": "^2.7.4",
     "astro-heroicons": "^0.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
