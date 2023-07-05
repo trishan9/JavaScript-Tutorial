@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+const chapters = await Astro.glob("./chapters/*.md");
+---
+
+<Layout title="30 Days JS">
+  <main class="w-full flex flex-wrap justify-center items-center gap-20 p-10">
+    {
+      chapters.map((chapter) => (
+        <div class="flex flex-col gap-y-4 items-center">
+          <img src={chapter.frontmatter.banner} />
+          <a
+            href={chapter.url}
+            class="bg-yellow-300 hover:bg-yellow-200 transition ease-in-out rounded-md p-1.5 text-xs sm:p-2 sm:text-sm lg:p-4 lg:text-base not-prose text-white"
+          >
+            Learn more
+          </a>
+        </div>
+      ))
+    }
+  </main>
+</Layout>

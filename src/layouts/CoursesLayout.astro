@@ -1,0 +1,34 @@
+---
+import NavBar from "../components/NavBar.astro";
+import ArrowLeft from "astro-heroicons/solid/ArrowLeft.astro";
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-[#121212]">
+    <NavBar />
+
+    <section
+      class="p-10 prose mx-auto md:prose-lg lg:prose-xl prose-invert max-w-screen-lg prose-a:text-yellow-300 prose-blockquote:border-l-primary prose-blockquote:bg-muted prose-blockquote:py-[1px] prose-blockquote:pr-5 prose-code:text-primary prose-code:font-normal prose-pre:border prose-img:rounded-sm"
+    >
+      <a href="/">
+        <button
+          class="flex my-12 items-center gap-4 bg-[#212121] p-3 px-6 rounded-md text-yellow-300 hover:underline"
+        >
+          <ArrowLeft class="w-6" />
+          Go Back
+        </button>
+      </a>
+      <slot />
+    </section>
+  </body>
+</html>
