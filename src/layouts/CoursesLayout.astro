@@ -10,22 +10,22 @@ const { frontmatter } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Trishan Wagle" />
-    <meta name="title" content="30 Days of JavaScript — Trishan" />
+    <meta name="title" content={frontmatter.metaTitle} />
     <meta
       name="description"
-      content="Website that teaches you all the fundamentals of JavaScript. Curated by taking reference from popular GitHub Repository: 30 Days of JavaScript by Asabeneh Yetayeh"
+      content={frontmatter.metaDescription}
     />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://trishan-js30.vercel.app/" />
-    <meta property="og:title" content="30 Days of JavaScript — Trishan" />
+    <meta property="og:title" content={frontmatter.metaTitle} />
     <meta
       property="og:description"
-      content="Website that teaches you all the fundamentals of JavaScript. Curated by taking reference from popular GitHub Repository: 30 Days of JavaScript by Asabeneh Yetayeh!"
+      content={frontmatter.metaDescription}
     />
     <meta
       property="og:image"
-      content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkRb7zPtx64QkkoxWFAW95tTOdSs0dAfFgVWvb640cdOc1sJzZMFY3az7G5ONmrJIu64w&usqp=CAU"
+      content={frontmatter.banner}
     />
 
     <meta name="viewport" content="width=device-width" />

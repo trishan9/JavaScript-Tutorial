@@ -1,5 +1,7 @@
 ---
 title: Day 1/30 - JavaScript
+metaTitle: Day 1/30 Days of JavaScript — Trishan
+metaDescription: Day 1 of JavaScript - you'll be learning about data types, Math objects strings, strings methods and typecasting which are very essentials to master the JavaScript, now you'll be one step ahead on your way to master the JavaScript.
 layout: ../../layouts/CoursesLayout.astro
 banner: https://raw.githubusercontent.com/Asabeneh/30-Days-Of-JavaScript/master/images/day_1_1.png
 ---
