@@ -1,4 +1,5 @@
 ---
+title: Day 2/30 - JavaScript
 layout: ../../layouts/CoursesLayout.astro
 banner: https://raw.githubusercontent.com/Asabeneh/30-Days-Of-JavaScript/master/images/banners/day_1_2.png
 ---
