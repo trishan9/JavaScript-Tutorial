@@ -2,6 +2,8 @@
 import Footer from "../components/Footer.astro";
 import NavBar from "../components/NavBar.astro";
 const { title } = Astro.props;
+import { inject } from '@vercel/analytics';
+inject();
 ---
 
 <!DOCTYPE html>
