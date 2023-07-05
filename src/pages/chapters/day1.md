@@ -174,9 +174,6 @@ console.log(randNum);
 const num = Math.floor(Math.random() * 11); // creates random number between 0 and 10
 console.log(num);
 
-//Absolute value
-console.log(Math.abs(-10)); // 10
-
 //Square root
 console.log(Math.sqrt(100)); // 10
 
@@ -184,24 +181,6 @@ console.log(Math.sqrt(2)); // 1.4142135623730951
 
 // Power
 console.log(Math.pow(3, 2)); // 9
-
-console.log(Math.E); // 2.718
-
-// Logarithm
-// Returns the natural logarithm with base E of x, Math.log(x)
-console.log(Math.log(2)); // 0.6931471805599453
-console.log(Math.log(10)); // 2.302585092994046
-
-// Returns the natural logarithm of 2 and 10 respectively
-console.log(Math.LN2); // 0.6931471805599453
-console.log(Math.LN10); // 2.302585092994046
-
-// Trigonometry
-Math.sin(0);
-Math.sin(60);
-
-Math.cos(0);
-Math.cos(60);
 ```
 
 #### Random Number Generator
