@@ -33,11 +33,11 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
 
-  <body class="bg-[#121212]">
+  <body class="bg-[#121212] w-full">
     <NavBar />
 
     <section
-      class="p-10 prose mx-auto md:prose-lg lg:prose-xl prose-invert max-w-screen-lg prose-a:text-secondary prose-blockquote:border-l-primary prose-blockquote:bg-muted prose-blockquote:py-[1px] prose-blockquote:pr-5 prose-code:text-primary prose-code:font-normal prose-pre:border prose-img:rounded-sm"
+      class="p-10 prose md:prose-lg lg:prose-xl prose-invert max-w-full prose-a:text-secondary prose-blockquote:border-l-primary prose-blockquote:bg-muted prose-blockquote:py-[1px] prose-blockquote:pr-5 prose-code:text-primary prose-code:font-normal prose-pre:border prose-img:rounded-sm !w-full"
     >
       <slot />
     </section>

@@ -2,6 +2,7 @@
 import Footer from "../components/Footer.astro";
 import NavBar from "../components/NavBar.astro";
 import ArrowLeft from "astro-heroicons/solid/ArrowLeft.astro";
+import ArrowRight from "astro-heroicons/solid/ArrowRight.astro";
 const { frontmatter } = Astro.props;
 ---
 
@@ -11,22 +12,13 @@ const { frontmatter } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="author" content="Trishan Wagle" />
     <meta name="title" content={frontmatter.metaTitle} />
-    <meta
-      name="description"
-      content={frontmatter.metaDescription}
-    />
+    <meta name="description" content={frontmatter.metaDescription} />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://trishan-js30.vercel.app/" />
     <meta property="og:title" content={frontmatter.metaTitle} />
-    <meta
-      property="og:description"
-      content={frontmatter.metaDescription}
-    />
-    <meta
-      property="og:image"
-      content={frontmatter.banner}
-    />
+    <meta property="og:description" content={frontmatter.metaDescription} />
+    <meta property="og:image" content={frontmatter.banner} />
 
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
